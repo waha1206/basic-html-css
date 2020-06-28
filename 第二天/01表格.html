@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src='js/common-dom.js'></script>
+    <style>
+        table {
+            width: 600;
+            background-color: antiquewhite;
+        }
+        
+        tr {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <tr> = 行 -->
+    <!-- <td> = 單元格 -->
+    <!-- 驚訝點！表格裡面沒有列 ... 只有行跟單元格 -->
+    <!-- cellspaceing 單元格與單元格之間的距離 -->
+    <!-- cellpadding 內容距離單元格邊框之間的距離 -->
+    <!-- 表格的三參為0 哪三參呢? border cellpadding cellspacing -->
+    <table width="500" border="1" align="center" cellspacing="10" cellpadding="10">
+        <!-- caption 表格標題，只存在表格裡面 -->
+        <caption>個人信息表</caption>
+        <tr>
+            <!-- <th> 標籤 特性 加粗，居中-->
+            <th>姓名</th>
+            <th>性別</th>
+            <th>電話</th>
+        </tr>
+        <tr>
+            <td>小王</td>
+            <td>女</td>
+            <td>110</td>
+        </tr>
+        <tr>
+            <td>小督</td>
+            <td>女</td>
+            <td>120</td>
+        </tr>
+
+
+    </table>
+    <script>
+    </script>
+</body>
+
+</html>
