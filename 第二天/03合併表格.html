@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src='../js/common-dom.js'></script>
+    <style>
+        #dv1 {
+            float: left;
+        }
+        
+        #dv2 {
+            float: left;
+            width: 500px;
+            height: 500px;
+            background-color: pink;
+        }
+        
+        #btn {
+            margin: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 合併表格有兩個關鍵詞
+	1.rowspan  (合併上下兩個儲存格)
+	2.colspan  (合併左右兩個儲存格)-->
+    <div id="dv1">
+        <table border="1" cellpadding="0" cellspacing="0" width="500" height="100">
+            <caption>
+                <h3>colsoan合併左右兩個儲存格</h3>
+            </caption>
+            <tr>
+                <td>11111</td>
+                <td>bbbbb</td>
+                <td>*****</td>
+            </tr>
+            <tr>
+                <td>11111</td>
+                <td colspan="2" bgcolor="yellow">bbbbb</td>
+
+            </tr>
+            <tr>
+                <td>11111</td>
+                <td>bbbbb</td>
+                <td>*****</td>
+            </tr>
+        </table>
+        <table border="1" cellpadding="0" cellspacing="0" width="500" height="100">
+            <caption>
+                <h3>rowspan合併上下兩個儲存格</h3>
+            </caption>
+            <tr>
+                <td>11111</td>
+                <td bgcolor="red">44444</td>
+                <td>77777</td>
+            </tr>
+            <tr>
+                <td>22222</td>
+                <td bgcolor="red">55555</td>
+                <td>88888</td>
+            </tr>
+            <tr>
+                <td>33333</td>
+                <td bgcolor="red">66666</td>
+                <td>99999</td>
+            </tr>
+        </table>
+        <table border="1" cellpadding="0" cellspacing="0" width="500" height="100">
+            <caption>
+                <h3>rowspan合併上下兩個儲存格</h3>
+            </caption>
+            <tr>
+                <td>11111</td>
+                <td rowspan="3" bgcolor="red">44444</td>
+                <td>77777</td>
+            </tr>
+            <tr>
+                <td>22222</td>
+                <td>55555</td>
+                <td>88888</td>
+            </tr>
+            <tr>
+                <td>33333</td>
+                <td>66666</td>
+                <td>99999</td>
+            </tr>
+        </table>
+
+        <table border="1" cellpadding="0" cellspacing="0" width="500" height="100">
+            <caption>
+                <h3>rowspan合併上下兩個儲存格</h3>
+            </caption>
+            <tr>
+                <td>11111</td>
+                <td rowspan="3" bgcolor="red">22222</td>
+                <td>33333</td>
+            </tr>
+            <tr>
+                <td>44444</td>
+                <td>55555</td>
+                <td>66666</td>
+            </tr>
+            <tr>
+                <td>77777</td>
+                <td>88888</td>
+                <td>99999</td>
+            </tr>
+        </table>
+        <table border="1" cellpadding="0" cellspacing="0" width="500" height="100">
+            <caption>
+                <h3>rowspan合併上下兩個儲存格</h3>
+                <p>結論，第二列與第三列裡面的第二個&lt;td&gt;要刪除掉，tr行裡面第三個儲存格是tr行裡面的第二個元素</p>
+            </caption>
+            <tr>
+                <td>11111</td>
+                <td rowspan="3" bgcolor="red">22222</td>
+                <td>33333</td>
+            </tr>
+            <tr>
+                <td>11111</td>
+                <td>33333</td>
+            </tr>
+            <tr id="tr3">
+                <td>11111</td>
+                <td>33333</td>
+            </tr>
+        </table>
+    </div>
+    <div id="dv2">
+        <input type="button" value="尋找我要的元素" id="btn">
+    </div>
+
+    <script>
+        my$("btn").onclick = function() {
+            tdObjs = my$("tr3").getElementsByTagName("td");
+            for (var i = 0; i < tdObjs.length; i++) {
+                console.log(tdObjs);
+                tdObjs[i].textContent = 'XXXXX';
+                tdObjs[i].bgColor = "yellow";
+            }
+
+        };
+    </script>
+</body>
+
+</html>
