@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src='../js/common-dom.js'></script>
+    <style>
+        /*
+		後代選擇器，只要是那個標籤後面的a元素全部選到
+		但是很怪的是 ..
+		ul li a 卻不行選到所有 a 怪惹
+		*/
+        
+        ul a {
+            font-size: 40px;
+            color: #daa520;
+        }
+        /*子代選擇器與後代選擇器
+		子代選擇器 > 只選親兒子那一代*/
+        
+        ul li>a {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <ul class="father">
+        <li><a href="#">子代元素第一階</a></li>
+        <div>
+            <a href="#">後代選擇器第二階</a>
+            <a href="#">後代選擇器第二階</a>
+            <a href="#">後代選擇器第二階</a>
+            <a href="#">後代選擇器第二階</a>
+        </div>
+    </ul>
+    <script>
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src='../js/common-dom.js'></script>
+
+</head>
+<style>
+    div {
+        /*刪除線*/
+        text-decoration: line-through;
+        text-decoration: none;
+        text-decoration: underline;
+        font-style: italic;
+    }
+    /*取消刪除線的寫法*/
+    
+    s {
+        text-decoration: none;
+    }
+    
+    em {
+        font-style: normal;
+    }
+    
+    strong {
+        font-weight: 400;
+    }
+    
+    .p1 {
+        font-weight: 700;
+    }
+    
+    ins {
+        text-decoration: none;
+    }
+</style>
+
+<body>
+    <div>
+        文字裝飾
+    </div>
+    <s>現價：   999</s>
+    <p>em 跟 i 是傾斜</p>
+    <em>傾斜</em> <i>傾斜</i>
+    <p>取消傾斜 font-style:normal</p>
+    <p>添加傾斜 font-style:italic</p>
+
+    <strong>加粗</strong> <b>加粗</b>
+    <p> strong 跟 b 是加粗</p>
+    <p>取消加粗 font-weight:normal 或是 400</p>
+    <p>添加文字變粗的方式 font-weight:700 或是 bold</p>
+    <p class="p1">正常文字加粗使用 上面寫法</p>
+
+    <p>u 跟 ins 是下滑線的方式</p>
+    <u>我是u下滑線</u> <ins>我是 ins 下滑線</ins>
+    <p>修改下滑線使用 text-decortion:none</p>
+    <p>添加下滑線的方法 text-decoration:underline</p>
+    <p>s 跟 del 是刪除線</p>
+    <s>我是 s 的刪除線</s> <del>我是del的刪除線</del>
+    <p>要修正刪除線要用裝飾器 text-decoration:none</p>
+    <p>添加刪除線的方法是 text-decoration:line-through</p>
+    <script>
+    </script>
+</body>
+
+</html>
