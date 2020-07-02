@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src='../js/common-dom.js'></script>
+</head>
+<style>
+    .nav a {
+        display: inline-block;
+        font-size: 18px;
+        font-weight: 700;
+        text-decoration: none;
+        color: #fff;
+        width: 120px;
+        height: 50px;
+        background-image: url(../image/bg.png);
+        /*
+        行內元素 行內塊元素 我們可以看做文本 所以可以使用 text-align 這個方式讓文字水平居中*/
+        text-align: center;
+        /*
+        行高等於盒子的高度，可以讓 單行文本垂直居中*/
+        line-height: 50px;
+    }
+    
+    a:hover {
+        /*color: #666;*/
+        background-image: url(../image/bgc.png);
+    }
+    
+    div {
+        text-align: center;
+    }
+</style>
+
+<body>
+    <div class="nav">
+        <a href="#">網站首頁</a>
+        <a href="#">網站首頁</a>
+        <a href="#">網站首頁</a>
+        <a href="#">網站首頁</a>
+        <a href="#">網站首頁</a>
+    </div>
+    <script>
+    </script>
+</body>
+
+
+</html>

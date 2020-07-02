@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src='../js/common-dom.js'></script>
+    <style>
+        /*優先權 0 0 0 1*/
+        
+        #bbb {
+            color: yellow;
+        }
+        
+        .aaa {
+            color: blue;
+        }
+        
+        div {
+            color: black!important;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="aaa" id="bbb" style="color:orange">
+        <p>ABC</p>
+    </div>
+
+    <script>
+    </script>
+</body>
+
+</html>

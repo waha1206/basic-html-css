@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src='../js/common-dom.js'></script>
+    <style>
+        /*
+        要注意， link visited hover active 要按順序放
+        口訣 LV HAO
+        */
+        
+        .dv1>a {
+            font-size: 24px;
+            text-decoration: none;
+            font-weight: 700;
+        }
+        
+        a:link {
+            color: #666;
+        }
+        
+        a:visited {
+            color: orange;
+        }
+        
+        a:hover {
+            color: red;
+        }
+        
+        a:active {
+            color: pink;
+        }
+        /*
+        通常會簡化成下面這樣*/
+        
+        .dv2 a {
+            color: #666;
+            font-size: 24px;
+            font-weight: 700;
+            text-decoration: none;
+        }
+        
+        .dv2 a:hover {
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="dv1"><a href="#">秒殺！</a></div>
+    <div class="dv2">
+        <a href="#">瘋狂秒殺！</a>
+    </div>
+
+    <script>
+    </script>
+</body>
+
+</html>
+
+</html>
