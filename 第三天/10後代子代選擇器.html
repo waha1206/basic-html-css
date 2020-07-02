@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<script src="../js/common-dom.js"></script>
+	<style>
+		.father>li{
+			color: red;
+		}
+	</style>
+</head>
+<body>
+<!-- ul>li>ul>li -->
+<ul class="father">
+	<li>123
+		<ul>
+			<li><a href="#">ABC</a></li>
+		</ul>
+	</li>
+</ul>
+
+<!-- ul>li -->
+	<ul>
+		<li>另外一個ur li</li>
+	</ul>
+<!-- div>p -->
+	<div>
+		<p></p>
+	</div>
+</body>
+</html>
