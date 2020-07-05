@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src='../js/common-dom.js'></script>
+    <style>
+        .banner,
+        .main,
+        .footer {
+            width: 900px;
+            background-color: #eee;
+            border: 1px dashed #ccc;
+            margin: 0 auto;
+        }
+        
+        .top-inner {
+            width: 900px;
+            height: 80px;
+            background-color: #ababab;
+            margin: 0 auto;
+            border: 1px dashed #ccc;
+        }
+        
+        .top {
+            background-color: #eee;
+            border: 1px dashed #ccc;
+            height: 80px;
+        }
+        
+        .banner {
+            height: 100px;
+            margin: 5px auto 5px;
+        }
+        
+        .banner li {
+            color: aliceblue;
+            width: 217px;
+            height: 100px;
+            float: left;
+            margin-right: 10px;
+            list-style: none;
+        }
+        
+        .one {
+            background-color: red;
+        }
+        
+        .two {
+            background-color: blue;
+        }
+        
+        .three {
+            background-color: green;
+        }
+        
+        .banner .four {
+            background-color: orange;
+            margin-right: 0;
+            float: right;
+        }
+        
+        .main {
+            height: 500px;
+            margin: 0 auto 5px;
+        }
+        
+        .left {
+            height: 500px;
+            width: 293px;
+            border: 1px solid #ccc;
+            background-color: yellow;
+            float: left;
+        }
+        
+        .right {
+            height: 500px;
+            width: 598px;
+            border: 1px solid #ccc;
+            background-color: skyblue;
+            float: right;
+        }
+        
+        .footer {
+            height: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- .top+.banner+(.main>.left+.right)+.footer -->
+    <div class="top">
+        <div class="top-inner">我是通欄內容</div>
+    </div>
+    <div class="banner">
+        <li class="one">one</li>
+        <li class="two">two</li>
+        <li class="three">three</li>
+        <li class="four">four</li>
+    </div>
+    <div class="main">
+        <div class="left">left</div>
+        <div class="right">right</div>
+    </div>
+    <div class="footer"></div>
+
+
+    <script>
+    </script>
+</body>
+
+</html>

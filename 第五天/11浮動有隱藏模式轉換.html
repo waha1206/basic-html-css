@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src='../js/common-dom.js'></script>
+    <style>
+        div {
+            height: 100px;
+            background-color: pink;
+            float: left;
+            /*float可以將元素默認轉換為 inline-block*/
+        }
+        
+        span {
+            height: 100px;
+            width: 100px;
+            background-color: red;
+            /*如果給行內元素添加了浮動，此時不需要轉換，也會讓該元素有寬高*/
+            float: left;
+        }
+    </style>
+</head>
+
+<body>
+    <div>AAAAAA</div>
+    <span>BB</span>
+    <script>
+    </script>
+</body>
+
+</html>

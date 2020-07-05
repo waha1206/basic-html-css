@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src='../js/common-dom.js'></script>
+    <style>
+        .father {
+            width: 500px;
+            height: 500px;
+            background-color: pink;
+            /*padding-top: 50px;*/
+            /*
+            解法A，讓他有邊框 1px 顏色可以自己調整
+            border: 1px solid #000;
+            解法B，讓他有padding 1px
+            padding-top: 1px;
+
+            缺點，增加了盒子的高度，要自己減去
+            */
+            /*解法C 使用overflow: hidden*/
+            overflow: hidden;
+        }
+        
+        .son {
+            width: 200px;
+            height: 200px;
+            background-color: purple;
+            margin-top: 50px;
+            margin-left: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="father">
+        <div class="son"></div>
+    </div>
+    <script>
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src='../js/common-dom.js'></script>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            /*相對定位，有兩部分組成，定位模式跟邊偏移*/
+            /*relative 每次移動，都是以自己的左上角為基點來移動*/
+            /*原來的位置還會保留*/
+        }
+        
+        .dv1 {
+            background-color: pink;
+            position: relative;
+            top: 100px;
+            left: 100px;
+        }
+        
+        .dv2 {
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="dv1"></div>
+    <div class="dv2"></div>
+
+    <script>
+    </script>
+</body>
+
+</html>

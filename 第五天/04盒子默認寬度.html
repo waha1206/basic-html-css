@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src='../js/common-dom.js'></script>
+    <style>
+        /*如果一個盒子沒有指定寬度，則會繼承父元素的寬度*/
+        
+        .father {
+            height: 200px;
+            background-color: pink;
+            width: 300px;
+            /*
+			父元素如果有指定寬度，使用padding會更開盒子寬度
+			*/
+        }
+        
+        .son {
+            /* 如果子元素給寬度，會撐開盒子，所以使用父元素繼承就好，這樣不會撐開
+			width: 300px;
+			*/
+            color: aliceblue;
+            background-color: blue;
+            /*子元素使用padding的話，不會撐開父元素的寬度*/
+            padding-left: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="father">
+        <div class="son">123</div>
+    </div>
+
+    <script>
+    </script>
+</body>
+
+</html>

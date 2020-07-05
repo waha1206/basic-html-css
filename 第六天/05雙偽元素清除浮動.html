@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src='../js/common-dom.js'></script>
+    <style>
+        .clearfix:before,
+        .clearfix:after {
+            content: "";
+            display: table;
+        }
+        
+        .clearfix:after {
+            clear: both;
+        }
+        
+        .clearfix {
+            *zoom: 1;
+        }
+        /*
+		這個案例會看到footer往上塌陷重疊到father的盒子
+		因為father的盒子沒有高度，所以會被重疊到
+		這時候需要清除浮動，有四種方法
+		後面02-03會演練如何解決，請看程式碼*/
+        
+        .father {
+            border: 1px solid red;
+            width: 300px;
+        }
+        
+        .big {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            float: left;
+        }
+        
+        .small {
+            width: 80px;
+            height: 80px;
+            background-color: yellow;
+            float: left;
+        }
+        
+        .footer {
+            width: 400px;
+            height: 100px;
+            background-color: pink;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="father clearfix">
+        <div class="big"></div>
+        <div class="small"></div>
+    </div>
+    <div class="footer"></div>
+    <script>
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src='../js/common-dom.js'></script>
+    <style>
+        .top,
+        .banner,
+        .main,
+        .footer {
+            width: 900px;
+            background-color: #eee;
+            border: 1px dashed #ccc;
+            margin: 0 auto;
+        }
+        
+        .top {
+            height: 80px;
+        }
+        
+        .banner {
+            height: 100px;
+            margin: 5px auto 5px;
+        }
+        
+        .main {
+            height: 500px;
+            margin: 0 auto 5px;
+        }
+        
+        .left {
+            height: 500px;
+            width: 293px;
+            border: 1px solid #ccc;
+            background-color: yellow;
+            float: left;
+        }
+        
+        .right {
+            height: 500px;
+            width: 598px;
+            border: 1px solid #ccc;
+            background-color: skyblue;
+            float: right;
+        }
+        
+        .footer {
+            height: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- .top+.banner+(.main>.left+.right)+.footer -->
+    <div class="top"></div>
+    <div class="banner"></div>
+    <div class="main">
+        <div class="left">left</div>
+        <div class="right">right</div>
+    </div>
+    <div class="footer"></div>
+
+
+    <script>
+    </script>
+</body>
+
+</html>

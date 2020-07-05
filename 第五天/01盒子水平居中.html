@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src='../js/common-dom.js'></script>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            /*
+			盒子居中要滿足兩個條件
+			1.要有寬度
+			2.是塊(block)元素
+			*/
+            /*
+			居中有兩種
+			盒子裡面的話使用
+			text-align: center
+			盒子本身的話使用margin: 0 auto 第一個元素是上下 第二個是左右 auto是自動填滿的意思 (四個參數為 --- 順時鐘)
+			*/
+            margin: 100px auto;
+            text-align: center
+        }
+        
+        span {
+            line-height: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <div><span>text-align</span></div>
+    <script>
+    </script>
+</body>
+
+</html>
