@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src='../js/common-dom.js'></script>
+    <style>
+        .father {
+            height: 500px;
+            width: 500px;
+            background-color: pink;
+            margin: 100px;
+        }
+        /*
+		父級沒有定位，跟沒父級一樣
+		*/
+        
+        .son {
+            height: 200px;
+            width: 200px;
+            background-color: red;
+            position: absolute;
+            top: 50px;
+            left: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="father">
+        <div class="son"></div>
+    </div>
+    <script>
+    </script>
+</body>
+
+</html>

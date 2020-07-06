@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src='../js/common-dom.js'></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .dv1 {
+            height: 675px;
+            width: 1080px;
+            margin-top: 50px;
+            left: 50%;
+            margin-left: -540px;
+            position: relative;
+        }
+        
+        .dv1 a {
+            height: 80px;
+            width: 80px;
+            border-radius: 50%;
+            text-align: center;
+            background-color: rgba(0, 0, 0, .5);
+            font-size: 32px;
+            font-weight: 700;
+            color: #fff;
+            line-height: 80px;
+            text-decoration: none;
+            /*display:block; 讓行內元素變成是塊元素，這樣才會有寬跟高*/
+            display: block;
+        }
+        
+        .left {
+            position: absolute;
+            left: 0;
+            top: 50%;
+            margin-top: -40px;
+        }
+        
+        .right {
+            position: absolute;
+            right: 0;
+            top: 50%;
+            margin-top: -40px;
+        }
+        
+        .dv1 ul {
+            width: 120px;
+            height: 24px;
+            background-color: rgba(0, 0, 0, .5);
+            position: absolute;
+            bottom: 18px;
+            left: 50%;
+            margin-left: -35px;
+            border-radius: 15px;
+            list-style: none;
+        }
+        
+        .dv1 ul li {
+            width: 10px;
+            height: 10px;
+            background-color: #fff;
+            /*使用 display:inline-block 會不太好控制間距，不小心就會掉出來*/
+            float: left;
+            /*margin 7px 上下左右都間距 7px*/
+            margin: 7px;
+            border-radius: 50%;
+        }
+        
+        .dv1 .current {
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="dv1">
+        <img src="../image/a-1080.jpg" alt="">
+        <div class="left">
+            <a href="#">左</a>
+        </div>
+        <div class="right">
+            <a href="#">右</a>
+        </div>
+        <ul>
+            <li></li>
+            <li class="current"></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+    <script>
+    </script>
+</body>
+
+</html>

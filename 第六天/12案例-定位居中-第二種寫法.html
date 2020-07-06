@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src='../js/common-dom.js'></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .dv1 {
+            /*
+            dv1的寬跟高，一定要給，不然會錯誤
+            */
+            width: 1080px;
+            height: 675px;
+            position: relative;
+            left: 50%;
+            margin-left: -540px;
+            margin-top: 50px;
+        }
+        
+        .dv2 {
+            width: 900px;
+            height: 80px;
+            background-color: #000;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            margin-left: -450px;
+        }
+        
+        ul li {
+            height: 80px;
+            width: 150px;
+            float: left;
+            list-style: none;
+            text-align: center;
+        }
+        
+        li a {
+            height: 80px;
+            width: 150px;
+            color: #fff;
+            text-decoration: none;
+            line-height: 80px;
+            /*block才會讓鼠標移動過去的時候，範圍內就會變成手指狀
+            要把行內轉成塊狀，否則就只有點到文字鼠標才會有手指符號
+            */
+            display: block;
+        }
+        
+        li a:hover {
+            background-color: #fff;
+            color: #000;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="dv1">
+        <img src="../image/a-1080.jpg" alt="">
+        <div class="dv2">
+            <ul>
+                <li><a href="#">快遞查詢</a></li>
+                <li><a href="#">快遞查詢</a></li>
+                <li><a href="#">快遞查詢</a></li>
+                <li><a href="#">快遞查詢</a></li>
+                <li><a href="#">快遞查詢</a></li>
+                <li><a href="#">快遞查詢</a></li>
+            </ul>
+        </div>
+    </div>
+
+
+    <script>
+    </script>
+</body>
+
+</html>

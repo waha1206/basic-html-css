@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src='../js/common-dom.js'></script>
+
+    <style>
+        /*第一種寫法*/
+        
+        .dv {
+            width: 310px;
+            height: 194px;
+            border: 1px solid #ccc;
+            margin: 100px auto;
+            padding: 10px;
+            position: relative;
+        }
+        /*第一種寫法結束*/
+        /*第二種寫法*/
+        
+        .dv0 {
+            width: 310px;
+            height: 194px;
+            border: 1px solid #ccc;
+            background: url(../image/ax310.jpg);
+            margin: 100px auto;
+            background-repeat: no-repeat;
+            padding: 10px;
+            background-position: 10px 10px;
+            position: relative;
+        }
+        /*第二種寫法結束*/
+        
+        .dv1 {
+            width: 310px;
+            height: 194px;
+            border: 1px solid #ccc;
+            background: url(../image/ax310.jpg);
+        }
+        
+        .dv2 {
+            width: 310px;
+            height: 194px;
+            border: 1px solid #ccc;
+            background: url(../image/a.jpg);
+            background-repeat: no-repeat;
+            background-size: 310px 194px;
+        }
+        
+        .im1 {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        
+        .im2 {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 第一種寫法 -->
+    <div class="dv">
+        <img class="im1" src="../image/左上.png" alt="">
+        <img class="im2" src="../image/右下.png" alt="">
+        <img class="im3" src="../image/ax310.jpg" alt="">
+    </div>
+    <!-- 第二種寫法 -->
+    <div class="dv0">
+        <img class="im1" src="../image/左上.png" alt="">
+        <img class="im2" src="../image/右下.png" alt="">
+    </div>
+
+    <h3>這張圖是310px x 194px</h3>
+    <div class="dv1"></div>
+
+    <br>
+    <h3>下面圖片使用原尺寸</h3>
+    <div class="dv2"></div>
+
+    <script>
+    </script>
+</body>
+
+</html>

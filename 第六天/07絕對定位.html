@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src='../js/common-dom.js'></script>
+    <style>
+        body {
+            height: 2000px;
+        }
+        
+        .top {
+            height: 100px;
+            width: 100px;
+            background-color: pink;
+        }
+        
+        .bottom {
+            height: 100px;
+            width: 100px;
+            background-color: blue;
+            /*
+			決對定位跟相對定位不一樣的地方是
+			絕對定位不站位置 --- absolute
+			相對定位，會保留自己原本的位置 --- relative
+
+			*/
+            position: absolute;
+            top: 50px;
+            left: 50px;
+        }
+        
+        .dv3 {
+            height: 100px;
+            width: 100px;
+            background-color: red;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="top"></div>
+    <div class="bottom"></div>
+    <div class="dv3"></div>
+
+    <script>
+    </script>
+</body>
+
+</html>
