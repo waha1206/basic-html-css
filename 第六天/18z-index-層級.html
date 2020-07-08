@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src='../js/common-dom.js'></script>
+    <style>
+        div {
+            height: 200px;
+            width: 200px;
+            position: absolute;
+        }
+        
+        .red {
+            /*
+			A.只有三種定位可以使用 z-index
+			position
+			1.absolute
+			2.relative
+			3.fixed
+
+			B.默認屬性的值是0
+			C.如果層級一樣，則，後來居上
+			D.數字後面不能加單位
+			*/
+            background-color: red;
+            z-index: 1;
+        }
+        
+        .blue {
+            background-color: blue;
+            top: 50px;
+            left: 50px;
+        }
+        
+        .green {
+            background-color: green;
+            top: 100px;
+            left: 100px;
+        }
+        
+        .blue:hover {
+            background-color: yellow;
+        }
+        
+        p {
+            position: absolute;
+            left: 20px;
+            top: 300px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="red"></div>
+    <div class="blue"></div>
+    <div class="green"></div>
+    <p>嘗試把滑鼠移動到藍色的方塊上 如果上面有蓋住其他元素，那麼，hover將不會觸發。</p>
+    <script>
+    </script>
+</body>
+
+</html>

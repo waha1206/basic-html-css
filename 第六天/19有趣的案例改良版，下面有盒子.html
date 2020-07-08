@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src='../js/common-dom.js'></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        div {
+            padding: 10px;
+            position: relative;
+        }
+        
+        .dv1 {
+            height: 450px;
+            width: 300px;
+            background: url(../image/300x300.png) no-repeat center center;
+            background-position: center 10px;
+            border: 1px solid #ccc;
+        }
+        
+        .dv2 {
+            height: 130px;
+            width: 300px;
+            border: 1px solid #ccc;
+            display: none;
+        }
+        
+        .select1-dv1 {
+            border: 1px solid #ccc;
+            position: relative;
+        }
+        
+        .dv2:hover {
+            display: block;
+            position: relative;
+            top: -150px;
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="select-dv1">
+        <div class="dv1"></div>
+        <div class="dv2"></div>
+    </div>
+
+    <script>
+    </script>
+</body>
+
+</html>

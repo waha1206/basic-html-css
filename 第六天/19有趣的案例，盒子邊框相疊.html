@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src='../js/common-dom.js'></script>
+    <style>
+        div {
+            height: 300px;
+            width: 300px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            float: left;
+            margin-left: -1px;
+            background: url(../image/300x300.png) no-repeat center center;
+        }
+        
+        div:hover {
+            border-color: red;
+            /*相對定位比標準流高一級，會浮在上面的
+			但是原來的位置不會脫標，所以沒有塌陷問題
+			在搭配z-index可以讓被選到的盒子往上浮起來*/
+            position: relative;
+            z-index: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <script>
+    </script>
+</body>
+
+</html>
