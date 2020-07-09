@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="../js/common-dom.js"></script>
+    <style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+      /*vertical-align
+默認是跟基線對齊的
+基線就是英文字(短的)的對其底線*/
+img{
+	/*該元素裡面的字，居中對齊
+	top頂端對其
+	bottom底端對其
+	*/
+
+	/*很有趣，可以比對一下，下面兩行
+	vertical-align: bottom
+	bertical-align: baseline
+	*/
+
+	/*
+	使用 bottom 可以把 圖片下面的縫隙給去除
+	如果使用baseline (預設值) 會有空隙產生
+	*/
+vertical-align: baseline;
+	/*  很重要很重要很重要很重要很重要很重要很重要很重要很重要很重要很重要
+	因為vertical-align的預設值是baseline，圖片跟div的底部一定會有空隙
+	要解決的方式就有兩種
+	第一種， vertical-align: bottom  (建議使用這種)
+	第二種， display: block  (通常不用這種)
+
+	一開始就要選一種初始化，如下：
+	img{
+		隨便設定一種
+	}
+
+
+	*/
+
+}
+
+div{
+	border: 2px solid red;
+}
+
+    </style>
+  </head>
+
+  <body>
+    <div>
+      <img src="../image/a-640.jpg" alt="" />
+      my name is 楊大大，使用 預設值 baseline 圖片與邊框中間會有空隙，設定改成bottom的話可以消除
+
+    </div>
+  </body>
+</html>
