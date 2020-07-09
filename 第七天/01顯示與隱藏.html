@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src='../js/common-dom.js'></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .dv1 {
+            height: 200px;
+            width: 200px;
+            background-color: pink;
+            /*
+			none 隱藏元素
+			block 顯示元素
+			隱藏之後不保留位置
+			*/
+            display: none;
+            /*
+			visibility 與 display 最大的不同在於，
+			display none 之後，不保留位置
+			visibility hidden 會保留位置
+			visibility: hidden;
+			*/
+        }
+        
+        P {
+            height: 200px;
+            width: 400px;
+            background-color: purple;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="dv1"></div>
+    <p>我是一個P</p>
+
+    <script>
+    </script>
+</body>
+
+</html>
