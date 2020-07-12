@@ -1,31 +1,37 @@
 <!DOCTYPE html>
 <html lang="zh-TW">
+
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
-	<script src="../js/common-dom.js"></script>
-<style>
-li{
-	width: 200px;
-	height: 40px;
-	border: 1px solid red;
-	/*強制再同一行內顯示所有文本，直到文本結束或者遭遇br標籤對象才換行
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../js/common-dom.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        li {
+            list-style: none;
+            width: 200px;
+            height: 40px;
+            border: 1px solid red;
+            /*強制再同一行內顯示所有文本，直到文本結束或者遭遇br標籤對象才換行
 	默認值是 white-space: normal
 	*/
-	white-space: nowrap;
-	/*
+            white-space: nowrap;
+            /*
 	overflow: hidden
 	超出的文本部分隱藏起來
 	*/
-	overflow: hidden;
-	/*
+            overflow: hidden;
+            /*
 	text-overflow: ellipsis 超出文字的部分使用...顯示
 	*/
-	text-overflow: ellipsis;
-
-	line-height: 40px;
-/*
+            text-overflow: ellipsis;
+            line-height: 40px;
+            /*
 結論：要在有限的文字框內讓多出的文字後面有 ... 下面的三個步驟缺一不可
 1.white-space 先讓他不要換行可以溢出在同一行
 2.overflow: hidden 讓他溢出的部分隱藏起來
@@ -34,19 +40,20 @@ li{
 上面三個缺一不可
 
 */
-
-}
-</style>
+        }
+    </style>
 </head>
+
 <body>
 
-		<li>文字文字文字文字文字文字文字文字文字</li>
-		<li>文字文字文字文字文字文字文字文字文字</li>
-		<li>文字文字文字文字文字文字文字文字文字</li>
-		<li>文字文字文字文字文字文字文字文字文字</li>
-		<li>文字文字文字文字文字文字文字文字文字</li>
-		<li>文字文字文字文字文字文字文字文字文字</li>
+    <li>文字文字文字文字文字文字文字文字文字</li>
+    <li>文字文字文字文字文字文字文字文字文字</li>
+    <li>文字文字文字文字文字文字文字文字文字</li>
+    <li>文字文字文字文字文字文字文字文字文字</li>
+    <li>文字文字文字文字文字文字文字文字文字</li>
+    <li>文字文字文字文字文字文字文字文字文字</li>
 
 
 </body>
+
 </html>

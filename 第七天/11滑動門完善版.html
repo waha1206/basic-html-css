@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src='../js/common-dom.js'></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            /*讓body的背景圖再X軸像線連續出現*/
+            background: url(../image/wx.jpg) repeat-x;
+        }
+        /*滑動門的左側設定值*/
+        
+        .nav a {
+            /*設定內容的上邊距20px 左右的邊距5px*/
+            margin: 20px 5px;
+            /*脫離標準流，讓他有行高 --- 不用設定寬，因為要內容撐開盒子*/
+            display: inline-block;
+            /*設定nav的字顏色白色*/
+            color: #fff;
+            /*讓他的下滑線消失*/
+            text-decoration: none;
+            /*設定行高，通常會一併設定height --- 另外會有文字居中的效果*/
+            line-height: 33px;
+            /*設定背景，讓他不要重複顯示*/
+            background: url(../image/to.png) no-repeat;
+            /*讓文字的距離盒子最左側15像素*/
+            padding-left: 15px;
+        }
+        /*滑動門的右側設定值 --- 滑動門一定是由 一個 a 與一個 span 一起組合而成*/
+        
+        .nav a span {
+            /*讓span脫離行內元素 --- 因為這樣才會有行高*/
+            display: inline-block;
+            /*設定背景圖片，讓圖片的最右側向右靠齊 -- 尾端就會出現了*/
+            background: url(../image/to.png) no-repeat right;
+            /*設定尾端文字距離盒子最右側有15px*/
+            padding-right: 15px;
+        }
+        /*這邊是並集 --- 一次選擇了兩個元素 a 跟 span 當滑鼠hover時 會同時觸發*/
+        
+        .nav a:hover,
+        /*曾經寫錯了一個錯誤 .nav a span:hover 這個會讓點到上一段程式碼的時候，後面的span部分不會更換背景圖片*/
+        /*.nav a:hover span 的意思是，當a被hover的時候，他會選擇下面的 span 讓他的背景圖片也被修改 */
+        /*這就是，後代選擇器！*/
+        
+        .nav a:hover span {
+            /*只替換盒子裡面的背景圖片，其他設定不更動*/
+            /*如果寫成 background的話，會覆蓋掉後面帶入的兩個參數 no-repeat 跟 right 除非，重新宣告*/
+            /*但是，因為用並集，一次會選兩個元素，後面的參數右不一樣，所以，一定只能使用 background-image --- 僅替換這個*/
+            background-image: url(../image/ao.png);
+        }
+        
+        .nav li {
+            /*讓li前面的小點點消失*/
+            list-style: none;
+            /*讓li脫離block(會吃掉一整行)變成 inline-block並且靠左邊對齊 */
+            float: left;
+        }
+    </style>
+</head>
+
+<body>
+
+    <ul class="nav">
+        <li>
+            <a href=""><span>首頁</span></a>
+        </li>
+        <li>
+            <a href=""><span>三個字</span></a>
+        </li>
+        <li>
+            <a href=""><span>麥歐有限公司</span></a>
+        </li>
+    </ul>
+
+    <script>
+    </script>
+</body>
+
+</html>

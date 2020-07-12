@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src='../js/common-dom.js'></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            /*
+			行高會繼承，所以設定再body的部分，則所有子孫都會有
+			1.5 = 1.5倍
+			假設，子代的字型尺寸為16的話 則，行高 = 16*1.5 = 24px 以此類推
+			*/
+            line-height: 1.5;
+        }
+        
+        div {
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>行高不帶單位</div>
+    <script>
+    </script>
+</body>
+
+</html>

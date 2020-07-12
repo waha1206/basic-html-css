@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src='../js/common-dom.js'></script>
+    <style>
+        body {
+            background-color: #212020;
+        }
+        
+        a {
+            margin: 100px;
+            height: 33px;
+            display: inline-block;
+            text-decoration: none;
+            line-height: 33px;
+            color: #fff;
+            background: url(../image/to.png) no-repeat;
+            padding-left: 15px;
+        }
+        
+        span {
+            display: inline-block;
+            background: url(../image/to.png) no-repeat right;
+            padding-right: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 浮動門的規則第一條就是 a 包 span 文字，要再 span 裡面 -->
+    <a href="#"><span>我是滑動門</span></a>
+
+    <script>
+    </script>
+</body>
+
+</html>
