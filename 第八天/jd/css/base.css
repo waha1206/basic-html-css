@@ -86,6 +86,29 @@ body {
     color: #f10215 !important;
 }
 
+
+/* 清除浮動 */
+
+
+/*偽元素清除需要下面的代碼 IE6 比較特別*/
+
+.clearfix:after {
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+
+/*這個是IE6專用的清除浮動的方法
+		zoom 1 就是清除方法*/
+
+.clearfix {
+    *zoom: 1;
+    /*  * 號 代表其他瀏覽器，不執行，但是 i6 i7 會執行這行代碼*/
+}
+
 @font-face {
     /* 声明字体 */
     font-family: "icomoon";
@@ -281,7 +304,7 @@ body {
     /* margin-top: 15px;
 	margin-left:15px;
   margin-right: -15px; */
-  float: left;
+    float: left;
     margin: 15px -15px 0 15px;
 }
 
@@ -295,8 +318,10 @@ body {
 }
 
 
-/* 页面底部 */
+/* 页面底部   原始的，暫時不用*/
 
+
+/*
 footer {
     margin-top: 35px;
     height: 500px;
@@ -347,6 +372,7 @@ footer a {
     font-weight: 700;
     margin-left: 82px;
 }
+*/
 
 
 /* 帮助模块 */
@@ -562,7 +588,7 @@ footer a {
 /*header開始*/
 
 .header {
-    height: 200px;
+    height: 139px;
 }
 
 
@@ -614,41 +640,99 @@ footer a {
 .search i:hover {
     background-position: -30px 0;
 }
+
+
 /*search結束*/
+
+
 /*購物車開始*/
-.myCar{
-  height: 35px;
-  width: 190px;
-  position: absolute;
-  top: 27px;
-  left: 860px;
-  background-color: #fff;
-  line-height: 35px;
-  text-align: center;
+
+.myCar {
+    height: 35px;
+    width: 190px;
+    position: absolute;
+    top: 27px;
+    left: 860px;
+    background-color: #fff;
+    line-height: 35px;
+    text-align: center;
 }
-.myCar a{
-  color: #f30213;
-  font-size: 12px;
-  margin-left: -20px;
+
+.myCar a {
+    color: #f30213;
+    font-size: 12px;
+    margin-left: -20px;
 }
-.myCar em{
-  height: 17px;
-  width: 19px;
-  position: absolute;
-  top: 8px;
-  background: url(../images/toolbars.png);
+
+.myCar em {
+    height: 17px;
+    width: 19px;
+    position: absolute;
+    top: 8px;
+    background: url(../images/toolbars.png);
 }
-.myCar s{
-  position: absolute;
-  top: 5px;
-  left: 132px;
-  background-color: #f10215;
-  height: 16px;
-  line-height: 16px;
-  text-decoration: none!important;
-  font-size: 12px;
-  padding: 0 2px;
-  border-radius: 6px;
-  color: #fff;
+
+.myCar s {
+    position: absolute;
+    top: 5px;
+    left: 132px;
+    background-color: #f10215;
+    height: 16px;
+    line-height: 16px;
+    text-decoration: none!important;
+    font-size: 12px;
+    padding: 0 2px;
+    border-radius: 6px;
+    color: #fff;
 }
+
+
 /*購物車結束*/
+
+
+/* footer開始了 */
+
+.footer {
+    height: 560px;
+    background-color: #eaeaea;
+}
+
+.footer-service {
+    border: 1px solid #dedede;
+}
+
+.footer-service-inner {
+    padding: 30px 0 30px 0;
+}
+
+
+/*盒子會塌陷，因為float:left 所以需要清除浮動*/
+
+.footer-service-inner li {
+    height: 42px;
+    width: 297px;
+    float: left;
+}
+
+.service_unit {
+    width: 225px;
+    height: 42px;
+    margin: 0 auto;
+}
+
+.service_unit h5 {
+    float: left;
+    width: 36px;
+    height: 43px;
+    background: url(../images/ico.png) no-repeat;
+}
+
+.service_unit p {
+    float: left;
+    height: 42px;
+    line-height: 42px;
+    font-size: 18px;
+    font-weight: 700;
+    text-indent: 16px;
+    color: #444;
+}

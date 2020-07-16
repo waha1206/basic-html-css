@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src='../js/common-dom.js'></script>
+    <style>
+        .dv1 {
+            height: 200px;
+            width: 200px;
+            background-color: red;
+        }
+        
+        .dv2 {
+            height: 200px;
+            width: 245px;
+            background: rgba(0, 0, 0, .3);
+        }
+        
+        .dv2 div {
+            width: 80px;
+            height: 100%;
+            background-color: yellow;
+            float: left;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>子容器可以比父容器大，孫字輩的使用float:left超過父字輩的話會往下掉</h3>
+    <div class="dv1">
+        <div class="dv2">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <script>
+    </script>
+</body>
+
+</html>
