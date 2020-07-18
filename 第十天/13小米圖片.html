@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src='../js/common-dom.js'></script>
+    <style>
+        div {
+            height: 400px;
+            width: 640px;
+            float: left;
+            position: relative;
+        }
+        
+        div:hover::after {
+            content: "爸，我在這裡！";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            border: 20px solid rgba(255, 255, 255, 0.5);
+            box-sizing: border-box;
+        }
+        /*很重要，css2的盒子模型為外增模式
+		css3的盒子模型為內減模式
+		css3內減模式 box-sizing: border-box;
+		css2外增模式 box-sizing: content-box;
+		*/
+    </style>
+</head>
+
+<body>
+    <div>
+        <img src="../image/a-640.jpg" alt="">
+    </div>
+    <div>
+        <img src="../image/a-640.jpg" alt="">
+    </div>
+    <div>
+        <img src="../image/a-640.jpg" alt="">
+    </div>
+    <div>
+        <img src="../image/a-640.jpg" alt="">
+    </div>
+    <script>
+    </script>
+</body>
+
+</html>

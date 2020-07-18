@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src='../js/common-dom.js'></script>
+    <style>
+        li:first-child {
+            background-color: pink;
+        }
+        
+        li:last-child {
+            background-color: red;
+        }
+        /*enev --- 選擇所有的偶數列
+		odd --- 選擇所有的奇數列
+	     li:nth-last-child(even) {
+		li:nth-last-child(odd) {
+		*/
+        /*很厲害的 nth-child(2n)
+		n = 0 1 2 3 4 5 6 7 ..
+		2n = 0 2 4 6 8 10 12 14 ..
+		4n = 0 4 8 12
+		*/
+        
+        li:nth-last-child(3) {
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li>A</li>
+        <li>B</li>
+        <li>C</li>
+        <li>D</li>
+        <li>E</li>
+    </ul>
+
+    <script>
+    </script>
+</body>
+
+</html>

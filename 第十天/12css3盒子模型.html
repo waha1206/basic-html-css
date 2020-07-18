@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src='../js/common-dom.js'></script>
+    <style>
+        /*很重要，css2的盒子模型為外增模式
+		css3的盒子模型為內減模式
+		css3內減模式 box-sizing: border-box;
+		css2外增模式 box-sizing: content-box;
+		*/
+        
+        div {
+            width: 300px;
+            height: 300px;
+            background-color: pink;
+            padding: 30px;
+            border-right: 20px solid red;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+    <script>
+    </script>
+</body>
+
+</html>

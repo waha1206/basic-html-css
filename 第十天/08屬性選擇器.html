@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src='../js/common-dom.js'></script>
+    <style>
+        /*選出有所帶有calss屬性的*/
+        
+        div[class] {
+            background-color: pink;
+        }
+        /*
+		另外一種寫法
+		div[class=demo]{}
+		*/
+        /*
+		下面是class開始的名稱選出來
+		^ 代表開始
+		$ 代表結尾
+		* 代表只要字串中有的就OK
+
+		$=
+		*/
+        
+        div[class^=test] {
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div>麥歐有限公司</div>
+    <div class="demo">麥歐有限公司</div>
+    <div>麥歐有限公司</div>
+    <div>麥歐有限公司</div>
+    <div>麥歐有限公司</div>
+    <div>麥歐有限公司</div>
+    <div>麥歐有限公司</div>
+    <div class="dv1">麥歐有限公司</div>
+    <div class="dv1">麥歐有限公司</div>
+    <div class="dv1">麥歐有限公司</div>
+    <div class="dv1test">麥歐有限公司</div>
+    <div class="test">麥歐有限公司</div>
+    <div class="Test2">麥歐有限公司</div>
+    <div class="test111111111">麥歐有限公司</div>
+
+    <script>
+    </script>
+</body>
+
+</html>

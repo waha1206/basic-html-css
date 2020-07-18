@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src='../js/common-dom.js'></script>
+    <style>
+        /*
+		before這種元素必須要有一個關鍵屬性
+		content = ""
+		其實他是一個盒子
+		但是因為，他內定是一個行內元素
+		可以透過display:block去轉換讓他有高跟寬度等等屬性
+
+
+		*/
+        
+        div::before {
+            width: 30px;
+            height: 30px;
+            display: inline-block;
+            content: "93";
+            color: yellow;
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div>今年</div>
+
+    <script>
+    </script>
+</body>
+
+</html>
